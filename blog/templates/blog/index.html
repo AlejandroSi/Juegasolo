@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,23 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mis perris</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="icon" href="img/patadeperro.png"/>
-    <link rel="stylesheet" href="style/main.css"/>
-    <link rel="stylesheet" href="style/menu.css"/>
-    <link rel="stylesheet" href="style/colores.css"/>
+    <link rel="icon" href="{% static 'img/patadeperro.png' %}"/>
+    <link rel="stylesheet" href="{% static 'style/main.css' %}"/>
+    <link rel="stylesheet" href="{% static 'style/menu.css' %}"/>
+    <link rel="stylesheet" href="{% static 'style/colores.css' %}"/>
 
 </head>
 <body>
     <header>
-        <h1><img id="imgLogo" src="img/patadeperro.png" alt="logo de pata de perro" />
+        <h1><img id="imgLogo" src="{% static 'img/patadeperro.png' %}" alt="logo de pata de perro" />
             MisPerris</h1>
             <nav>
                 <ul id="menu">
-                     <li><a href="index.html" tabindex="1">Inicio</a></li>
-                     <li><a href="mascotas.html" tabindex="2">Mascotas</a></li>
-                     <li><a href="nosotros.html" tabindex="3">Nosotros</a></li>
-                     <li><a href="adopta.html" tabindex="4">Adopta</a></li>
-                     <li><a href="contacto.html" tabindex="5">Contacto</a></li>
+                     <li><a href="{% url 'index' %}" tabindex="1">Inicio</a></li>
+                     <li><a href="{% url 'mascota' %}" tabindex="2">Mascotas</a></li>
+                     <li><a href="" tabindex="3">Nosotros</a></li>
+                     <li><a href="" tabindex="4">Adopta</a></li>
+                     <li><a href="" tabindex="5">Contacto</a></li>
                  </ul> 
             </nav>
     </header>
@@ -39,21 +40,21 @@
         <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
-            <img id="carimg" src="img/perro1.jpg" alt="perro uno">
+            <img id="carimg" src="{% static 'img/perro1.jpg' %}" alt="perro uno">
             <div class="carousel-caption d-none d-md-block">
                 <p id="desc1" >"Desde el primer momento entendió que queríamos ayudarlo y darle amor. Él lo entendió perfectamente."</p>
               </div>
           </div>
     
           <div class="item">
-            <img id="carimg" src="img/perro2.jpg" alt="perro dos">
+            <img id="carimg" src="{% static 'img/perro2.jpg' %}" alt="perro dos">
             <div class="carousel-caption d-none d-md-block">
                 <p id="desc2" >"Pensé que al ser un perro rescatado seria tímido y miedoso, pero gracias a dios, me equivoqué."</p>
               </div>
           </div>
         
           <div class="item">
-            <img id="carimg" src="img/perro3.jpg" class="img-responsive" alt="perro tres">
+            <img id="carimg" src="{% static 'img/perro3.jpg' %}" class="img-responsive" alt="perro tres">
             <div class="carousel-caption d-none d-md-block">
                 <p id="desc3" >"Es cariñoso y con muy buen tempramento, no esperaría esto de un perro que fue utilizado para peleas."</p>
               </div>

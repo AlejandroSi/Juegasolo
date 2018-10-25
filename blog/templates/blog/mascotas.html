@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mis perris</title>
-    <link rel="stylesheet" href="style/menu.css"/>
-    <link rel="stylesheet" href="style/main.css"/>
-    <link rel="icon" href="img/patadeperro.png"/>
-    <link rel="stylesheet" href="style/galeria.css"/>
+    <link rel="stylesheet" href="{% static 'style/menu.css' %}"/>
+    <link rel="stylesheet" href="{% static 'style/main.css' %}"/>
+    <link rel="icon" href="{% static 'img/patadeperro.png' %}"/>
+    <link rel="stylesheet" href="{% static 'style/galeria.css' %}"/>
 </head>
 <body>
     <header>
@@ -16,11 +17,11 @@
             MisPerris</h1>
             <nav>
                 <ul id="menu">
-                     <li><a href="index.html" tabindex="1">Inicio</a></li>
-                     <li><a href="mascotas.html" tabindex="2">Mascotas</a></li>
-                     <li><a href="nosotros.html" tabindex="3">Nosotros</a></li>
-                     <li><a href="adopta.html" tabindex="4">Adopta</a></li>
-                     <li><a href="contacto.html" tabindex="5">Contacto</a></li>
+                     <li><a href="{% url 'index' %}" tabindex="1">Inicio</a></li>
+                     <li><a href="{% url 'mascota' %}" tabindex="2">Mascotas</a></li>
+                     <li><a href="" tabindex="3">Nosotros</a></li>
+                     <li><a href="{% url 'adopta' %}" tabindex="4">Adopta</a></li>
+                     <li><a href="" tabindex="5">Contacto</a></li>
                  </ul> 
             </nav>
     </header>
@@ -28,7 +29,7 @@
     <div class="container">
         <div class="box">
             <div class="imgbox">
-                <img src="img/perro5.jpg" alt="perro 1">
+                <img src="{% static 'img/perro5.jpg' %}" alt="perro 1">
             </div>
             <div class="details">
                 <div class="content">
@@ -40,7 +41,7 @@
         </div>
         <div class="box">
                 <div class="imgbox">
-                        <img src="img/perro6.jpg" alt="perro 2">
+                        <img src="{% static 'img/perro6.jpg' %}" alt="perro 2">
                     </div>
                     <div class="details">
                         <div class="content">
@@ -54,7 +55,7 @@
         </div>
         <div class="box">
                 <div class="imgbox">
-                        <img src="img/perro8.jpg" alt="perro 3">
+                        <img src="{% static 'img/perro8.jpg'%}" alt="perro 3">
                     </div>
                     <div class="details">
                         <div class="content">
@@ -67,7 +68,7 @@
         </div>
         <div class="box">
                 <div class="imgbox">
-                        <img src="img/perro9.jpg" alt="perro 4">
+                        <img src="{% static 'img/perro9.jpg' %}" alt="perro 4">
                     </div>
                     <div class="details">
                         <div class="content">
@@ -80,7 +81,7 @@
         </div>
         <div class="box">
                 <div class="imgbox">
-                        <img src="img/perro10.jpg" alt="perro 5">
+                        <img src="{% static 'img/perro10.jpg' %}" alt="perro 5">
                     </div>
                     <div class="details">
                         <div class="content">
@@ -94,7 +95,7 @@
         </div>
         <div class="box">
                 <div class="imgbox">
-                        <img src="img/perro11.jpg" alt="perro 6">
+                        <img src="{% static 'img/perro11.jpg' %}" alt="perro 6">
                     </div>
                     <div class="details">
                         <div class="content">
@@ -108,7 +109,7 @@
         </div>
         <div class="box">
                 <div class="imgbox">
-                        <img src="img/perropug.jpg" alt="perro 7">
+                        <img src="{% static 'img/perropug.jpg' %}" alt="perro 7">
                     </div>
                     <div class="details">
                         <div class="content">
@@ -121,7 +122,7 @@
         </div>
         <div class="box">
                 <div class="imgbox">
-                        <img src="img/perro12.jpg" alt="perro 8">
+                        <img src="{% static 'img/perro12.jpg' %}" alt="perro 8">
                     </div>
                     <div class="details">
                         <div class="content">
@@ -135,7 +136,7 @@
         </div>
         <div class="box">
                 <div class="imgbox">
-                        <img src="img/perro13.jpg" alt="perro 9">
+                        <img src="{% static 'img/perro13.jpg' %}" alt="perro 9">
                     </div>
                     <div class="details">
                         <div class="content">
