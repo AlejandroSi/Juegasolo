@@ -1,0 +1,21 @@
+#carimg{
+    width: 100%;
+}
+
+#desc1{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+#desc2, #desc3{
+    font-size: 18px;
+}
+#ci{
+    float: none;
+}
+
+
+footer{
+    background-color: green;
+    color: white;
+}
