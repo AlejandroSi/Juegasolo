@@ -35,10 +35,10 @@
 
         <label for="txtRut">Rut:</label>
         <input id="txtRut" type="text" onkeyup="modifyText()" 
-        placeholder="Ingrese Rut" required /> <script src="main.js"></script>
+        placeholder="Ingrese Rut" required />
 
         <label for="txtDate">Fecha de Nacimiento:</label> 
-        <input type="date" placeholder="MM-YYYY">
+        <input type="date" placeholder="MM-YYYY" required max="01-01-2018"/>
         
 
         <label for="txtCorreo">Correo:</label>     
@@ -89,6 +89,6 @@
                     </tr>
                 </table>
     </footer>
-    <script src="main.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
 </body>
 </html>

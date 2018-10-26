@@ -19,3 +19,53 @@ footer{
     background-color: green;
     color: white;
 }
+
+#bienvenidos{
+    text-align: center;
+}
+
+.rescate {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid black;
+}
+
+.cuadro img{
+    float: left;
+    border-radius: 40%;
+    border: solid;
+    box-shadow: 4px 4px grey;
+}
+
+.column {
+    width: 50%;
+}
+
+p{
+    border: solid black;
+    padding: 10px;
+}
+
+#info{
+    background: green;
+    color:white;
+    text-align: center;
+}
+
+.info{
+    margin:20px;
+
+}
+
+.info img{
+    width: 180px;
+    height: 180px;
+    border-radius: 40%;
+    border: 5px;
+    display: flex;
+}
+
+body{
+    display: flex;
+}
